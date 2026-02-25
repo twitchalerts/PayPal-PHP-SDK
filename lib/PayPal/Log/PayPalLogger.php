@@ -83,7 +83,7 @@ class PayPalLogger extends AbstractLogger
      *
      * @throws \Psr\Log\InvalidArgumentException
      */
-    public function log($level, string|\Stringable $message, array $context = [])
+    public function log($level, string|\Stringable $message, array $context = []): void
     {
         if ($this->isLoggingEnabled) {
             // Checks if the message is at level below configured logging level
